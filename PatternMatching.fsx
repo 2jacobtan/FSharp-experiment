@@ -22,3 +22,8 @@ printfn "%d" <|
     match parseInt "42" with
     | Some x -> x
     | None -> 0
+
+printfn "%d" <|
+    match parseHelper Int32.TryParse "420" with
+    | Some x -> x
+    | None -> 0
