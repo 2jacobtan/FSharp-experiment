@@ -2,7 +2,7 @@ open System
 
 /// You can also use the shorthand function construct for pattern matching, 
 /// which is useful when you're writing functions which make use of Partial Application.
-let private parseHelper ( f:(String -> bool * 't) ) = f >> function
+let private parseHelper ( f:(String -> _ * _) ) = f >> function
     | (true, item) -> Some item
     | (false, _) -> None
 
