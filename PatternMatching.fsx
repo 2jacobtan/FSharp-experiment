@@ -30,6 +30,8 @@ printfn "%d" <|
 
 let product : int -> int -> int
     = fun x y -> x * y
+let product2 : int -> int -> int
+    = ( * )
 
 printfn "product: %d" <| product 2 3
 
