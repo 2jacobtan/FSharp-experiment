@@ -27,3 +27,10 @@ printfn "%d" <|
     match parseHelper Int32.TryParse "420" with
     | Some x -> x
     | None -> 0
+
+let product : int -> int -> int
+    = fun x y -> x * y
+
+printfn "product: %d" <| product 2 3
+
+printfn "Some: %A" <| parseInt "123"
